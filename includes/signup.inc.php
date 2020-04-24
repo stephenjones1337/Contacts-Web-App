@@ -3,10 +3,10 @@
 
     require 'dbh.inc.php';
 
-    $username       = $_POST['uid'];
-    $email          = $_POST['mail'];
-    $password       = $_POST['pwd'];
-    $passwordCheck  = $_POST['pwd-check'];
+    $username      = $_POST['uid'];
+    $email         = $_POST['mail'];
+    $password      = $_POST['pwd'];
+    $passwordCheck = $_POST['pwd-check'];
 
     if(empty($username) || empty($email) || empty($password) || empty($passwordCheck))
     {
@@ -57,7 +57,7 @@
         {
           $sql  = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?);";
           $stmt = mysqli_stmt_init($conn);
-          
+
           if(!mysqli_stmt_prepare($stmt, $sql))
           {
             header("Location: ../signup.php?error=sqlerror");
