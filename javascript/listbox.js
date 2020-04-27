@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-        url: 'data.php',
+        url: '../../includes/data.inc.php',
         success: function (data) {
             var source = $.parseJSON(data);
             $("#listbox").jqxListBox({ source: source, width: '200px', height: '250px', theme: 'classic' });

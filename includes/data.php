@@ -7,6 +7,7 @@ $dbuser = 'stris';
 $dbpass = 'password01!';
 $host = 'astamps78515.ipagemysql.com';
 $db = 'stris_contacts';
+
 mysql_connect($host, $dbuser, $dbpass) or die(mysql_error());
 mysql_select_db($db) or die(mysql_error());
 
