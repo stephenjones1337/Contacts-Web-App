@@ -8,6 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title></title>
   <link rel="stylesheet" href="style.css">
+  <script src="javascript/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <script src="javascript/jqxcore.js" type="text/javascript"></script>
+  <script src="javascript/jqxbuttons.js" type="text/javascript"></script>
+  <script src="javascript/jqxlistbox.js" type="text/javascript"></script>
+  <script src="javascript/jqxscrollbar.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.1/d3.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
 </head>
 <body>
   <header>
