@@ -16,8 +16,6 @@
   <script src="javascript/Listbox Widget/jqxbuttons.js" type="text/javascript"></script>
   <script src="javascript/Listbox Widget/jqxlistbox.js" type="text/javascript"></script>
   <script src="javascript/Listbox Widget/jqxscrollbar.js" type="text/javascript"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.1/d3.min.js"></script> -->
-  <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
 </head>
 <body>
   <header>

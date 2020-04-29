@@ -2,7 +2,7 @@
 <?php
 
  ?>
-   <!-- <script src="javascript/listbox.js" type="text/javascript"></script> -->
+   <script src="includes/listbox.js" type="text/javascript"></script>
    <div class="contacts-container">
      <!-- search, listbox(?, internal scrolling html container type thing)  -->
      <section class="contact-left">
@@ -15,19 +15,3 @@
 
      </section>
    </div>
-
-   <script type="text/javascript">
-   $(document).ready(function () {
-     $.ajax({
-       url: 'includes/data.inc.php',
-       success: function (data) {
-         var source = $.parseJSON(data);
-         $("#listbox").jqxListBox({ source: source, width: '200px', height: '250px', theme: 'classic' });
-         console.log(source);
-       },
-       error: function () {
-         alert('The source is unavailable!');
-       }
-     });
-   });
-   </script>
