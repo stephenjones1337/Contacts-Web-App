@@ -3,9 +3,8 @@ $(document).ready(function () {
         url: 'includes/data.inc.php',
         dataType: 'json',
         success: function (data) {
-          console.log(data);
-            var source = $.parseJSON(data);
-            console.log(source);
+          var format = JSON.stringify(data);
+            var source = $.parseJSON(format);
             $("#listbox").jqxListBox(
               { source: source, width: '200px',
               height: '250px', theme: 'classic' });
