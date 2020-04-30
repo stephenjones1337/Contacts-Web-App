@@ -1,7 +1,7 @@
 <?php
 require 'dbh.inc.php';
 // SQL Query
-$sql = 'SELECT contactLast FROM Contacts';
+$sql = 'SELECT * FROM Contacts';
 $stmt = mysqli_stmt_init($conn);
 
 if(!mysqli_stmt_prepare($stmt, $sql))
@@ -11,17 +11,18 @@ if(!mysqli_stmt_prepare($stmt, $sql))
 }
 else
 {
-  //printf("pepeHands.json");
-
   $source  = array();
   //excute and store result into $stmt
   mysqli_stmt_execute($stmt);
   $result = mysqli_stmt_get_result($stmt);
-
+  
+  
   while($row = mysqli_fetch_assoc($result)) {
-    //printf("Entered while loop");
-    //$thing = "'" + $row['contactLast'] + "'";
+    array_push($source, $row['contactId']);
+    array_push($source, $row['contactFirst']);
     array_push($source, $row['contactLast']);
+    array_push($source, $row['contactAddress']);
+    array_push($source, $row['contactNotes']);
   }
 
   // Print source string
