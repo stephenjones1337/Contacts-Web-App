@@ -3,7 +3,8 @@ $(document).ready(function () {
         url: 'includes/data.inc.php',
         dataType: 'json',
         success: function (data) {
-            var format = JSON.stringify(data);
+            var format = JSON.stringify(data);            
+
             var source = $.parseJSON(format);
             console.log(source);
 

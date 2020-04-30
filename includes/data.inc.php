@@ -29,7 +29,11 @@ else
   }
 
   // Print source string
-  echo json_encode($final);
+  $json = json_encode($final);
+  echo $json;
+  $file = fopen('json/contacts.json', "w");
+  fwrite($file, $json);
+  fclose($file);
 
 }
 
