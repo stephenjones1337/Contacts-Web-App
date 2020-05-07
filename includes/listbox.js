@@ -4,7 +4,7 @@ $(document).ready(function () {
         dataType: 'json',
         success: function (data) {
             var format = JSON.stringify(data);            
-
+            console.log(format);
             var source = $.parseJSON(format);
             console.log(source);
 
@@ -31,6 +31,8 @@ function addContact(contact){
 }
 
 /*
-
-
+<ul>
+  <li>whatever</li>
+  <li>anotherone</li>
+<ul>
 */
